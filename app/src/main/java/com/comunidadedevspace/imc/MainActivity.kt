@@ -52,7 +52,10 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent (this, ResultActivity::class.java)
                 intent.putExtra(key_result_imc, resultado)
                 startActivity(intent)
-                println(resultado)
+
+                //Cores
+                //EditText background + Icon
+                //Gradiente + Tutulo + Icon + Descricao
             }
 
 
