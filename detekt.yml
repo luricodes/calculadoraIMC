@@ -1,0 +1,37 @@
+build:
+  maxIssues: 0
+  excludeCorrectable: false
+processors:
+  active: true
+  exclude:
+    - 'DetektProgressListener'
+config:
+  validation: true
+  warningsAsErrors: false
+  checkExhaustiveness: true
+  checkAliases: true
+comments:
+  active: true
+complexity:
+  active: true
+  TooManyFunctions:
+    active: false
+  LongParameterList:
+    active: false
+style:
+  MagicNumber:
+    active: false
+  WildcardImport:
+    active: false
+coroutines:
+  active: true
+exceptions:
+  active: true
+performance:
+  active: true
+potential-bugs:
+  active: true
+formatting:
+  active: true
+  android: true
+  autoCorrect: true

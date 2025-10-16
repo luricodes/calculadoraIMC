@@ -1,0 +1,1 @@
+-keep class com.comunidadedevspace.imc.feature.imc.** { *; }

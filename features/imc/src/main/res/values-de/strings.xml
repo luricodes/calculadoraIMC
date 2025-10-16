@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="label_weight">Gewicht (kg)</string>
+    <string name="label_height">Größe (m)</string>
+    <string name="action_calculate">Berechnen</string>
+    <string name="label_result">Ihr BMI: %1$s</string>
+    <string name="title_history">Verlauf</string>
+    <string name="error_invalid_input">Bitte gültige positive Zahlen eingeben.</string>
+    <string name="dialog_offline_title">Offline-Modus</string>
+    <string name="dialog_offline_message">Änderungen werden synchronisiert, sobald Sie wieder online sind.</string>
+    <string name="action_acknowledge">Verstanden</string>
+    <string name="action_toggle_dark_mode">Dunkelmodus umschalten</string>
+    <string name="imc_underweight">Untergewicht</string>
+    <string name="imc_normal">Normal</string>
+    <string name="imc_overweight">Übergewicht</string>
+    <string name="imc_obese_i">Adipositas</string>
+    <string name="imc_obese_ii">Starke Adipositas</string>
+</resources>
