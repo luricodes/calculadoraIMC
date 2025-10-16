@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">IMC</string>
+    <string name="label_weight">Weight (kg)</string>
+    <string name="label_height">Height (m)</string>
+    <string name="action_calculate">Calculate</string>
+    <string name="label_result">Your BMI: %1$s</string>
+    <string name="title_history">History</string>
+    <string name="error_invalid_input">Please enter valid positive numbers.</string>
+    <string name="dialog_offline_title">Offline Mode</string>
+    <string name="dialog_offline_message">Changes will sync automatically once you are online again.</string>
+    <string name="action_acknowledge">Got it</string>
+    <string name="action_toggle_dark_mode">Toggle dark mode</string>
+    <string name="imc_underweight">Underweight</string>
+    <string name="imc_normal">Normal</string>
+    <string name="imc_overweight">Overweight</string>
+    <string name="imc_obese_i">Obesity</string>
+    <string name="imc_obese_ii">Severe Obesity</string>
+</resources>
