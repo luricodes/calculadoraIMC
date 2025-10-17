@@ -36,7 +36,6 @@ object NetworkModule {
     @Singleton
     fun provideOkHttpClient(
         @dagger.hilt.android.qualifiers.ApplicationContext context: Context,
-        appConfig: AppConfig,
         authorizationInterceptor: AuthorizationInterceptor,
         retryInterceptor: RetryInterceptor,
         circuitBreakerInterceptor: CircuitBreakerInterceptor,

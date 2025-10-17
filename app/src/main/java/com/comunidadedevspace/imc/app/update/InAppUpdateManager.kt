@@ -14,6 +14,7 @@ class InAppUpdateManager
     constructor(
         private val appUpdateManager: AppUpdateManager,
     ) {
+        @Suppress("DEPRECATION")
         fun checkForUpdates(activity: Activity) {
             appUpdateManager.appUpdateInfo.addOnSuccessListener { info ->
                 if (info.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE &&

@@ -19,8 +19,15 @@ class SyncWorker
         override suspend fun doWork(): Result {
             Timber.i("Running sync worker")
             return try {
-                syncRepository.syncPendingRecords { Result.success(Unit) }
-                Result.success()
+                val result =
+                    syncRepository.syncPendingRecords {
+                        kotlin.Result.success(Unit)
+                    }
+                if (result.isSuccess) {
+                    Result.success()
+                } else {
+                    Result.retry()
+                }
             } catch (t: Throwable) {
                 Timber.e(t, "Sync worker failed")
                 Result.retry()
