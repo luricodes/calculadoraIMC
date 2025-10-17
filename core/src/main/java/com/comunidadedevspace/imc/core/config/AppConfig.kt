@@ -16,6 +16,7 @@ class AppConfig
         private val featureFlagManager: FeatureFlagManager,
         private val remoteConfigManager: RemoteConfigManager,
         @ApplicationContext private val context: Context,
+        private val buildInfo: BuildInfo,
     ) {
         /** Default API endpoint – override through Remote Config (`api_base_url`). */
         var baseUrl: String = DEFAULT_BASE_URL
@@ -43,7 +44,7 @@ class AppConfig
             baseUrl = DEFAULT_BASE_URL
         }
 
-        fun provideUserAgent(): String = "IMCApp/${BuildInfo.versionName} (${context.packageName})"
+        fun provideUserAgent(): String = "IMCApp/${buildInfo.versionName} (${context.packageName})"
 
         companion object {
             const val KEY_API_BASE_URL = "api_base_url"

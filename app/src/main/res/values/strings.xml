@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">IMC Pro</string>
     <string name="notification_channel_general">General notifications</string>
-    <string name="remote_config_description">Remote configuration controls feature flags and endpoints.</string>
 </resources>
